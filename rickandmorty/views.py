@@ -9,7 +9,7 @@ def home_view(request):
     context = {
         'characters': characters, 
     }
-    return render(request, template_name='core/home.html', context=context)
+    return render(request, template_name='rickandmorty/home.html', context=context)
 
 def get_rickmorty_data_view(request):
 
