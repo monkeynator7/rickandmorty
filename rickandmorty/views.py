@@ -4,6 +4,13 @@ from django.shortcuts import render, HttpResponse
 from .models import Character
 
 # Create your views here.
+def home_view(request):
+    characters = Character.objects.all()
+    context = {
+        'characters': characters, 
+    }
+    return render(request, template_name='core/home.html', context=context)
+
 def get_rickmorty_data_view(request):
 
     url = "https://rickandmortyapi.com/api/character"
