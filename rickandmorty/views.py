@@ -31,3 +31,6 @@ def get_rickmorty_data_view(request):
         return HttpResponse('<h1>Data loaded correctly</h1>')
     else:
         return HttpResponse("<h1>Data didn't load correctly, please retry.</h1>")
+    
+def rick_game(request):
+    return render(request, template_name='rickandmorty/game.html')

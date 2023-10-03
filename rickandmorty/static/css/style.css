@@ -1,7 +1,7 @@
 body {
     background-image: url('../img/wallpaper.jpg');
     background-repeat: repeat-y;
-    background-size: contain;
+    width: 100vw;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Space Mono', monospace;
 }
@@ -67,3 +67,44 @@ body {
     color: rgb(255, 255, 255, 0.8);
 }
 /* Card */
+
+/* Game */
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid white;
+    background-color: white;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 149px;
+    animation: jump 500ms infinite;
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{lef:480px;}
+    100%{left:-40px}
+}
