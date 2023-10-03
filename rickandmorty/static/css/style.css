@@ -1,0 +1,50 @@
+body {
+    background-image: url('../img/wallpaper.jpg');
+    background-repeat: repeat-y;
+    background-size: contain;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Header */
+#logo-rick{
+    display: flex;
+    justify-content: center;
+}
+#logo-rick img{
+    width: 20vw;
+}
+/* Header */
+/* Cards Container */
+#main-container{
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aliceblue;
+}
+/* Card */
+.card-container{
+    width: 15vw;
+    margin: 20px;
+    text-align: center;
+}
+.card-container img{
+    width: 15vw;
+    filter: grayscale(100%);
+
+}
+.card-container img:hover{
+    filter: none;
+    transition-duration: 10ms;
+}
+
+.wanted-text{
+    font-weight: 800;
+    font-size: larger;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    color: rgb(0, 28, 66);
+    text-decoration: line-through;
+}
