@@ -5,46 +5,65 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Space Mono', monospace;
 }
-
 /* Header */
-#logo-rick{
+.navbar{
+    background-color: rgb(0, 0, 0, 0,5);
     display: flex;
     justify-content: center;
 }
-#logo-rick img{
+#logo-rick {
+    display: flex;
+    justify-content: center;
+}
+#logo-rick img {
     width: 20vw;
 }
 /* Header */
+
 /* Cards Container */
-#main-container{
+#main-container {
     display: flex;
     margin-left: 10vw;
     margin-right: 10vw;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: rgb(14, 42, 84, 0.8);
+    border-radius: 30px;
 }
+
 /* Card */
-.card-container{
+.card-container {
     width: 15vw;
     margin: 20px;
+    margin-top: 50px;
     text-align: center;
 }
-.card-container img{
+
+.card-container img {
     width: 15vw;
     filter: grayscale(100%);
 
 }
-.card-container img:hover{
+
+.card-container img:hover {
     filter: none;
     transition-duration: 10ms;
 }
 
-.wanted-text{
-    font-weight: 800;
+.wanted-text {
     font-size: larger;
     margin-bottom: 0px;
     margin-top: 5px;
-    color: rgb(0, 28, 66);
+    color: white;
     text-decoration: line-through;
 }
+
+.card-container h5{
+    color: rgb(225, 239, 30);
+}
+.card-container ul{
+    list-style: none;
+    text-align: left;
+    color: rgb(255, 255, 255, 0.8);
+}
+/* Card */
